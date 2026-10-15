@@ -1,0 +1,9 @@
+ANÁLISE ESTATÍSTICA DAS VENDAS
+Quantidade de vendas: 1000
+Faturamento total: 322966.75
+Média das vendas: 322.97
+Mediana das vendas: 253.85
+Menor venda: 10.68
+Maior venda: 1042.65
+Desvio padrão: 245.89
+Avaliação média: 6.97
