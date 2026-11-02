@@ -1,0 +1,34 @@
+ANÁLISE ESTATÍSTICA DAS VENDAS
+=============================================
+Quantidade de vendas: 1000
+Faturamento total: R$ 322.966,75
+Ticket médio: R$ 322,97
+Mediana das vendas: R$ 253,85
+Menor venda: R$ 10,68
+Maior venda: R$ 1.042,65
+Desvio padrão amostral: R$ 245,89
+Avaliação média dos clientes: 6.97
+
+RESPOSTAS ÀS OITO PERGUNTAS DE NEGÓCIO
+=============================================
+1. Filial com maior faturamento: Giza (R$ 110.568,71).
+2. Filial com maior quantidade de vendas: Alex (340 vendas).
+3. Linha de produto com maior faturamento: Food and beverages (R$ 56.144,84).
+4. Linha de produto com melhor avaliação média: Food and beverages (7.11).
+5. Forma de pagamento mais utilizada: Ewallet (345 vendas).
+6. Valor médio das vendas (ticket médio): R$ 322,97.
+7. Maior venda: 860-79-0874 | Filial Giza | R$ 1.042,65.
+8. Dia da semana com mais vendas: Sábado (164 vendas).
+
+DETALHAMENTO POR FILIAL
+- Giza: R$ 110.568,71 | 328 vendas
+- Alex: R$ 106.200,37 | 340 vendas
+- Cairo: R$ 106.197,67 | 332 vendas
+
+DETALHAMENTO POR LINHA DE PRODUTO
+- Food and beverages: R$ 56.144,84 | avaliação média 7.11
+- Sports and travel: R$ 55.122,83 | avaliação média 6.92
+- Electronic accessories: R$ 54.337,53 | avaliação média 6.92
+- Fashion accessories: R$ 54.305,89 | avaliação média 7.03
+- Home and lifestyle: R$ 53.861,91 | avaliação média 6.84
+- Health and beauty: R$ 49.193,74 | avaliação média 7.00
