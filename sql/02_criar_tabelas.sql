@@ -1,4 +1,5 @@
--- Criar a tabela com os dados originais
+-- Tabela da camada Raw: preserva os nomes do arquivo original,
+-- com a coluna Sales mapeada para Total durante a importação.
 CREATE TABLE IF NOT EXISTS raw_vendas (
     "Invoice ID" TEXT,
     "Branch" TEXT,
@@ -19,7 +20,7 @@ CREATE TABLE IF NOT EXISTS raw_vendas (
     "Rating" TEXT
 );
 
--- Criar a tabela com os dados tratados
+-- Tabela da camada tratada: tipos adequados para análise.
 CREATE TABLE IF NOT EXISTS vendas_tratadas (
     id_venda VARCHAR(50) PRIMARY KEY,
     "Filial" VARCHAR(10) NOT NULL,
@@ -37,5 +38,10 @@ CREATE TABLE IF NOT EXISTS vendas_tratadas (
     custo_mercadoria NUMERIC(12,2) CHECK (custo_mercadoria >= 0),
     margem_percentual NUMERIC(10,2),
     receita_bruta NUMERIC(12,2) CHECK (receita_bruta >= 0),
-    "Avaliação" NUMERIC(4,2) CHECK ("Avaliação" BETWEEN 0 AND 10)
+    "Avaliação" NUMERIC(4,2) CHECK ("Avaliação" BETWEEN 0 AND 10),
+    dia_semana VARCHAR(20)
 );
+
+-- Compatibilidade com bancos criados anteriormente sem dia_semana.
+ALTER TABLE vendas_tratadas
+ADD COLUMN IF NOT EXISTS dia_semana VARCHAR(20);
