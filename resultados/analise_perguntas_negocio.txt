@@ -1,0 +1,28 @@
+ANÁLISE DAS OITO PERGUNTAS DE NEGÓCIO
+Projeto Supermercado — base com 1.000 vendas
+
+1. Filial com maior faturamento
+Giza — R$ 110.568,71.
+
+2. Filial com maior quantidade de vendas
+Alex — 340 vendas.
+
+3. Linha de produto com maior faturamento
+Food and beverages — R$ 56.144,84.
+
+4. Linha de produto com melhor avaliação média
+Food and beverages — 7,11 pontos.
+
+5. Forma de pagamento mais utilizada
+Ewallet — 345 vendas.
+
+6. Valor médio das vendas (ticket médio)
+R$ 322,97.
+
+7. Maior venda realizada
+Venda 860-79-0874, filial Giza — R$ 1.042,65.
+
+8. Dia da semana com maior quantidade de vendas
+Sábado — 164 vendas.
+
+Observação: os valores foram calculados a partir do CSV tratado publicado no repositório. O script src/03_estatistica.py reproduz o relatório e gera os gráficos de apoio.
