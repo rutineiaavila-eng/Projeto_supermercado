@@ -45,3 +45,11 @@ CREATE TABLE IF NOT EXISTS vendas_tratadas (
 -- Compatibilidade com bancos criados anteriormente sem dia_semana.
 ALTER TABLE vendas_tratadas
 ADD COLUMN IF NOT EXISTS dia_semana VARCHAR(20);
+
+-- Preserva quatro casas decimais também em tabelas já existentes.
+ALTER TABLE vendas_tratadas
+    ALTER COLUMN preco_unitario TYPE NUMERIC(12,4),
+    ALTER COLUMN "Imposto" TYPE NUMERIC(12,4),
+    ALTER COLUMN valor_total TYPE NUMERIC(14,4),
+    ALTER COLUMN custo_mercadoria TYPE NUMERIC(14,4),
+    ALTER COLUMN receita_bruta TYPE NUMERIC(14,4);
